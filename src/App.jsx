@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-
-const KEY ="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";
+const KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
 
 const AGENTS = [
   { id:"guestvoice", name:"GuestVoice", tagline:"24/7 Guest Communications", color:"#0D9488", icon:"💬", description:"Handle guest requests, complaints & multilingual support instantly", prompt:`You are GuestVoice, an elite AI guest communications specialist for AAHOA hotel owners. Give specific copy-paste-ready scripts and templates. Include real dollar amounts. Always sign off: — GuestVoice, HotelMind AI`, quickPrompts:["Draft response to a 2-star cleanliness review","Guest says AC broken, how do I respond?","Angry guest demands free night, what do I say?","Write a Spanish check-in welcome message"] },
